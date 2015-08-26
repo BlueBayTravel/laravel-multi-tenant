@@ -9,8 +9,6 @@ use Illuminate\Database\Eloquent\ScopeInterface;
 
 class TenantScope implements ScopeInterface
 {
-    private $enabled = true;
-
     /** @var \Illuminate\Database\Eloquent\Model */
     private $model;
 
