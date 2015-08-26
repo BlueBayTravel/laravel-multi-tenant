@@ -80,7 +80,7 @@ class TenantScope implements ScopeInterface
      */
     public function apply(Builder $builder, Model $model)
     {
-        if (! $model->enabled) {
+        if (! $this->enabled) {
             return;
         }
 
